@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Double Click Close Tab</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background: #fafafa;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #111;
+    }
+    .last-updated {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    p, li {
+      font-size: 15px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+    ul {
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    li { margin-bottom: 6px; }
+    a { color: #2d6a4f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: #f0faf4;
+      border-left: 3px solid #52b788;
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 15px;
+      color: #2d6a4f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: March 11, 2026</p>
+
+    <div class="highlight">
+      <strong>In short:</strong> Double Click Close Tab does not collect, store, or transmit any personal data. Everything happens locally on your device.
+    </div>
+
+    <h2>About This Extension</h2>
+    <p>
+      Double Click Close Tab is a browser extension that closes the current tab when you double left-click on an empty area of a web page. It also provides a simple on/off toggle to enable or disable this behavior.
+    </p>
+
+    <h2>Data Collection</h2>
+    <p>This extension does <strong>not</strong> collect any data. Specifically:</p>
+    <ul>
+      <li>No personal information is collected.</li>
+      <li>No browsing history is recorded.</li>
+      <li>No page content is read or stored.</li>
+      <li>No analytics or tracking scripts are used.</li>
+      <li>No data is sent to any external server.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>The extension requests the following permissions and uses them solely for its core functionality:</p>
+    <ul>
+      <li><strong>Content Scripts (<code>&lt;all_urls&gt;</code>):</strong> Required to detect double-click events on web pages. The content script only listens for mouse events and does not read or modify page content.</li>
+      <li><strong>Storage (<code>storage</code>):</strong> Used to save your on/off preference locally via <code>chrome.storage.sync</code>. This preference may sync across your Chrome devices through your Google account, but is never accessible to the extension developer.</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <p>This extension does not use any third-party services, libraries, or APIs.</p>
+
+    <h2>Local Storage</h2>
+    <p>
+      The only data stored is a single boolean value (<code>enabled: true/false</code>) representing whether the extension is turned on or off. This is saved using Chrome's built-in <code>chrome.storage.sync</code> API and remains entirely under your control.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      If this privacy policy is updated, the changes will be reflected on this page with a revised "Last updated" date. Since the extension does not collect any data, significant changes are unlikely.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have any questions about this privacy policy, you can open an issue on the
+      <a href="https://github.com/nicetran/Double-Click-Close-Tab" target="_blank" rel="noopener">GitHub repository</a>.
+    </p>
+  </div>
+</body>
+</html>

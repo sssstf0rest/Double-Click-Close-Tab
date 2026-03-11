@@ -58,7 +58,12 @@
       }
 
       sent = true;
-      chrome.runtime.sendMessage({ action: 'closeTab' });
+      // Check enabled state before sending close request
+      chrome.storage.sync.get({ enabled: true }, (data) => {
+        if (data.enabled) {
+          chrome.runtime.sendMessage({ action: 'closeTab' });
+        }
+      });
 
       // Cooldown so a triple-click doesn't fire twice
       setTimeout(() => {
