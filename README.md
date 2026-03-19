@@ -11,7 +11,7 @@ A lightweight Chrome extension that closes the current tab when you double left-
 
 ## Install from Chrome Web Store
 
-> Coming soon
+Install directly in [Chrome Store](https://chromewebstore.google.com/detail/double-click-close-tab/kefmmfdkncfbpmledhgolbdihjjkbhdd)
 
 ## Install (Development)
 
